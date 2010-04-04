@@ -2,6 +2,8 @@
 
 "One bullet more in the head will go a long way to ensuring your survival" - Zombieland
 
+DEMO: http://technoweenie.github.com/jquery.doubletap/
+
 This plugin adds custom touch-screen events to the given HTML elements.  This should only work on iPads, iPhones, and iPod Touches.  Anything else is bonus.
 
 The simplest way to use this is to pass in a single callback.
