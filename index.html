@@ -7,12 +7,13 @@
   <meta http-equiv="imagetoolbar" content="false" />
   <meta name="MSSmartTagsPreventParsing" content="true" />
   <link type="text/css" rel="stylesheet" href="/css/techno.css" />
+  <meta name = "viewport" content = "width = device-width">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://github.com/technoweenie/jquery.doubletap/raw/master/lib/jquery.doubletap.js"></script>
   <script type="text/javascript">
 $(document).ready(function() {
   $('h2').addSwipeEvents(function(evt, touch) {
-    $('#results').prepend("<li>" + evt.type + "</li>")
+    $('#results').prepend("<li>" + touch.eventType + "</li>")
   })
 })
   </script>
@@ -20,7 +21,11 @@ $(document).ready(function() {
 <body>
   <h1><a href="/">&#171;&#171; techno weenie</a></h1>
 
+  <h2><a href="http://github.com/technoweenie/jquery.doubletap">jquery.doubletap</a></h2>
+
   <h2>SWIPE ME</h2>
   <ul id="results"></ul>
+
+<a href="http://github.com/technoweenie/jquery.doubletap"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub" /></a>
 </body>
 </html>
