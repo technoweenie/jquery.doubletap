@@ -1,0 +1,56 @@
+# DoubleTap for jQuery
+
+"One bullet more in the head will go a long way to ensuring your survival" - Zombieland
+
+This plugin adds custom touch-screen events to the given HTML elements.  This should only work on iPads, iPhones, and iPod Touches.  Anything else is bonus.
+
+The simplest way to use this is to pass in a single callback.
+
+    $('.swipe').addSwipeEvents(function(evt, touch) {
+      // this is triggered for any of the custom touch events
+    });
+
+Or, you can bind to each custom event explicitly.
+
+    $('.swipe').addSwipeEvents().
+      bind('swipe', function(evt, touch) {
+        // triggered for swipe events
+      })
+
+The events that are triggered are:
+
+* touch (triggered for all events)
+* swipe (triggered for all swipe events)
+* tap (no horizontal or vertical movement)
+* doubletap
+* swipeleft
+* swiperight
+* swipeup
+* swipedown
+
+Each event passes an extra `touchStatus` object with these properties:
+
+* target (the HTML element triggering the event)
+* touch (a reference to the browser's TouchStatus object)
+* eventType (the name of the triggered event)
+* startX (the starting screenX value)
+* startY (the starting screenY value)
+* currentX (the latest screenX value)
+* currentY (the latest screenY value)
+
+## TODO
+
+* Gestures
+* Multi-finger swipes
+
+## Note on Patches/Pull Requests
+ 
+* Fork the project.
+* Make your feature addition or bug fix.
+* Commit, do not mess with version or history.
+  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Send me a pull request. Bonus points for topic branches.
+
+## Copyright
+
+Copyright (c) 2010 rick. See LICENSE for details.
