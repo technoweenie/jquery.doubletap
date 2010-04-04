@@ -40,8 +40,17 @@ Each event passes an extra `touchStatus` object with these properties:
 
 ## TODO
 
+* Android support would rock :)
 * Gestures
 * Multi-finger swipes
+
+## Acknowledgements
+
+* Ryan Scherf, author of the [swipe plugin][swipe]
+* nroberts, author of the [Touching and Gesturing on the iPhone][blog] blog post.
+
+[swipe]: http://plugins.jquery.com/project/swipe
+[blog]: http://www.sitepen.com/blog/2008/07/10/touching-and-gesturing-on-the-iphone/
 
 ## Note on Patches/Pull Requests
  
